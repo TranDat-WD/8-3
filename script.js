@@ -2,6 +2,20 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+videos.forEach((video) => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        video.play();
+      } else {
+        video.pause();
+      }
+    });
+  });
+
+  observer.observe(video);
+});
+
 document.addEventListener("DOMContentLoaded", function () {
   const audio = document.getElementById("background-audio");
   audio.volume = 0.15;
