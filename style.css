@@ -1,0 +1,341 @@
+.video-container {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  max-height: 65%;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 224, 240);
+  pointer-events: none;
+  opacity: 1;
+  transition: background-color 2s ease-in-out;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+}
+
+body {
+  font-family: "Pacifico", sans-serif;
+  background-color: rgb(255, 224, 240);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  min-height: 115vh;
+  max-width: 100%;
+  margin: 0;
+  text-align: center;
+  overflow-y: scroll;
+}
+
+/* quote explain */
+
+.container {
+  flex-direction: row;
+  display: flex;
+  width: calc(100% - 20px);
+  height: 95%;
+  background-color: #d69ade;
+  border-radius: 25px;
+  justify-items: center;
+  margin: 10px;
+  align-self: center;
+  transition: all 0.25s ease;
+}
+
+.explain-container,
+.image-container {
+  margin: 15px;
+  border-radius: 25px;
+  transition: all 0.25s ease;
+}
+
+.explain-container {
+  background-color: #aa60c8;
+  justify-items: left;
+  font-size: calc(0.35rem + 1vw);
+  width: 75%;
+}
+
+.explain-container h1,
+h2,
+p {
+  color: white;
+  margin: 20px;
+  transition: all 0.25s ease;
+}
+
+.cards-constellation {
+  width: 95%;
+  height: fit-content;
+  margin-left: calc(5% + 5px);
+  border-radius: 5%;
+  transition: all 0.25s ease;
+}
+
+.scroll-view {
+  scrollbar-width: none;
+  height: calc(100% - 95px);
+  width: 100%;
+  overflow-y: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.chat-container {
+  width: 75%;
+  height: fit-content;
+  flex-direction: row;
+  display: flex;
+  transition: all 0.25s ease;
+}
+
+.avatar-container {
+  align-self: flex-end;
+  margin: 15px;
+  margin-bottom: 5px;
+  background-color: #d69ade;
+  height: 95px;
+  width: 95px;
+  border-radius: 100%;
+  transition: all 0.25s ease;
+}
+
+.avatar {
+  margin: 5px;
+  width: 85px;
+  height: 85px;
+  border-radius: 100%;
+  transition: all 0.25s ease;
+}
+
+.chat-text-container {
+  background-color: #d69ade;
+  align-self: flex-end;
+  margin: 5px;
+  margin-left: 0px;
+  border-radius: 25px;
+  width: calc(100% - (95px + 15px * 2));
+  height: fit-content;
+  transition: all 0.25s ease;
+}
+
+.text {
+  color: #fff;
+  text-align: left;
+  text-justify: center;
+  margin: 20px;
+  transition: all 0.25s ease;
+}
+
+.image-container {
+  justify-content: center;
+  align-content: center;
+  width: 25%;
+  transition: all 0.25s ease;
+}
+
+.cards-constellation {
+  border-radius: 25px;
+  transition: all 0.25s ease;
+}
+
+.header {
+  color: #aa60c8;
+  font-size: 3rem;
+  justify-self: center;
+  margin: 30px;
+  transition: all 0.25s ease;
+}
+
+/* quote explain */
+
+.cards-shown-button {
+  background-color: #aa60c8;
+  align-self: center;
+  justify-self: center;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: all 0.5s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: "Pacifico", serif;
+  transition: all 0.5s ease;
+}
+
+.cards-container {
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.75s ease;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #00000081;
+}
+
+.cards-button {
+  perspective: 1000px;
+  pointer-events: none;
+  transform: translateY(-100px);
+  opacity: 0;
+  transition: all 0.5s ease;
+  background: none;
+  border: none;
+  justify-content: center;
+  position: relative;
+  width: 90%;
+  height: 90%;
+  transition: all 0.5s ease;
+  border-radius: 5%;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.75s;
+  border-radius: 10%;
+}
+
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+  border-radius: 5%;
+}
+
+.cards-button.flipped .card-inner {
+  transform: rotateY(-180deg);
+}
+
+.card-back {
+  font-size: 16px;
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards-image {
+  width: calc(90%);
+  height: fit-content;
+  transition: all 0.75s ease;
+  border-radius: 5%;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 600px) {
+  body {
+    height: 100%;
+  }
+
+  .header {
+    font-size: 1.8rem;
+  }
+
+  .cards-shown-button {
+    font-size: 1rem;
+    padding: 12px 24px;
+  }
+
+  .container {
+    align-items: center;
+    flex-direction: column;
+    width: 95%;
+    height: 90%;
+    margin: 5px;
+  }
+
+  .image-container {
+    width: 90%;
+    height: 25%;
+  }
+
+  .cards-constellation {
+    width: 25%;
+    height: fit-content;
+    align-self: center;
+    justify-self: center;
+    border-radius: 5%;
+    margin-top: 5px;
+    margin-left: 0px;
+  }
+
+  .explain-container {
+    width: 90%;
+    height: calc(100% - 25% - 15px * 4);
+  }
+
+  .avatar-container {
+    width: 55px;
+    height: 55px;
+    margin: 10px;
+  }
+
+  .avatar {
+    width: 45px;
+    height: 45px;
+  }
+
+  .chat-container {
+    width: 100%;
+  }
+
+  .chat-text-container {
+    margin: 10px;
+    width: 75%;
+  }
+}
+
+.cards-image:hover {
+  transform: translateY(-10px);
+}
+
+button:hover {
+  transform: translateY(-7px);
+}
+
+.cards-shown-button:hover {
+  background-color: #714283;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}

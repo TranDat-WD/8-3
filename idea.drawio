@@ -1,0 +1,129 @@
+<mxfile host="65bd71144e">
+    <diagram id="wZNw_IKCiNOiUg5Y5N_S" name="Page-1">
+        <mxGraphModel dx="2071" dy="249" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1500" pageHeight="1500" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="3" style="edgeStyle=none;html=1;" parent="1" source="2" target="4" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-50" y="1480" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="6" style="edgeStyle=none;html=1;" parent="1" source="2" target="5" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" style="edgeStyle=none;html=1;" parent="1" source="2" target="7" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" style="edgeStyle=none;html=1;" parent="1" source="2" target="9" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" style="edgeStyle=none;html=1;" parent="1" source="2" target="11" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" style="edgeStyle=none;html=1;" parent="1" source="2" target="13" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="Chia các câu chúc thành các chòm sao&lt;br&gt;(Constellations)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffcd28;strokeColor=#d79b00;gradientColor=#ffa500;" parent="1" vertex="1">
+                    <mxGeometry x="-50" y="1530" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="51" style="edgeStyle=none;html=1;" edge="1" parent="1" source="4" target="50">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="Tình yêu&lt;br&gt;(Thiên nga - Cygnus)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" parent="1" vertex="1">
+                    <mxGeometry x="-200" y="1420" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="58" style="edgeStyle=none;html=1;" edge="1" parent="1" source="5" target="62">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="Học tập&lt;br&gt;(Thiên Hậu - Cassiopeia)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" parent="1" vertex="1">
+                    <mxGeometry x="-50" y="1360" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="61" style="edgeStyle=none;html=1;" edge="1" parent="1" source="7" target="64">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="Động lực&lt;br&gt;(Sư Tử - Leo)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fa6800;fontColor=#000000;strokeColor=#C73500;" parent="1" vertex="1">
+                    <mxGeometry x="100" y="1420" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="71" style="edgeStyle=none;html=1;" edge="1" parent="1" source="9" target="70">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="Hạnh phúc&lt;br&gt;(Lạp Hộ - Orion)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e51400;fontColor=#ffffff;strokeColor=#B20000;" parent="1" vertex="1">
+                    <mxGeometry x="-50" y="1700" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="67" style="edgeStyle=none;html=1;" edge="1" parent="1" source="11" target="66">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="Công việc&lt;br&gt;(Ma Kết - Capricornus)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" parent="1" vertex="1">
+                    <mxGeometry x="-200" y="1640" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="75" style="edgeStyle=none;html=1;" edge="1" parent="1" source="13" target="74">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="Thành công&lt;br&gt;(Đại Hùng - Ursa Major)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#008a00;strokeColor=#005700;fontColor=#ffffff;" parent="1" vertex="1">
+                    <mxGeometry x="100" y="1640" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="54" style="edgeStyle=none;html=1;" edge="1" parent="1" source="50" target="53">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" style="edgeStyle=none;html=1;" edge="1" parent="1" source="50" target="55">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" value="&lt;font style=&quot;&quot;&gt;&lt;strong style=&quot;&quot; data-end=&quot;179&quot; data-start=&quot;169&quot;&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(18, 18, 18));&quot;&gt;Lý do:&lt;/font&gt;&lt;/strong&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(18, 18, 18));&quot;&gt; Thiên Nga gắn liền với thần thoại Hy Lạp về tình yêu bất diệt. Zeus hóa thành thiên nga để quyến rũ nữ thần Leda. Ngoài ra, nó còn biểu tượng cho sự thủy chung vì thiên nga thường có bạn đời duy nhất trong suốt cuộc đời.&lt;/font&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" vertex="1" parent="1">
+                    <mxGeometry x="-410" y="1280" width="200" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="53" value="" style="shape=image;imageAspect=0;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;image=https://th.bing.com/th/id/R.a3e3fa6962fe0926e9f3c40449160085?rik=54R3SoRq8jxIqA&amp;riu=http%3a%2f%2fwww.planetguide.net%2fwp-content%2fuploads%2f2021%2f05%2fDepositphotos_121257640_s-2019-768x549.jpg&amp;ehk=vAaqaWzNKqvtwDKQzQIlDGIgQzfWQ2PaQuZc6rLvKDA%3d&amp;risl=&amp;pid=ImgRaw&amp;r=0;" vertex="1" parent="1">
+                    <mxGeometry x="-680" y="1218" width="198.49" height="142" as="geometry"/>
+                </mxCell>
+                <mxCell id="55" value="" style="shape=image;imageAspect=0;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;image=https://media.istockphoto.com/illustrations/cygnus-which-floats-in-the-night-sky-illustration-id1298346814?k=20&amp;m=1298346814&amp;s=612x612&amp;w=0&amp;h=NqqTEzbdeH7MDZxoI2FwQqaRdBMmzZheSOQUpq9JTWs=;clipPath=inset(3.3% 33.33% 36.79% 29.67%);" vertex="1" parent="1">
+                    <mxGeometry x="-404.8" y="1024" width="174.8" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="57" value="" style="shape=image;imageAspect=0;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;image=https://i.pinimg.com/736x/96/fc/b1/96fcb1e3e6c8ebb6e343221e128ad7a4.jpg;" vertex="1" parent="1">
+                    <mxGeometry x="-67.67999999999995" y="940" width="137.68" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="60" value="" style="shape=image;imageAspect=0;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;image=https://truyencotich.top/storage/img/KUQokjW8Ik1nLlG9ZZjAyYlWFqtPumGIzvnn3VHw.jpeg;" vertex="1" parent="1">
+                    <mxGeometry x="520" y="1094" width="195" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="63" style="edgeStyle=none;html=1;" edge="1" parent="1" source="62" target="57">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="62" value="&lt;strong data-end=&quot;475&quot; data-start=&quot;465&quot;&gt;Lý do:&lt;/strong&gt; Cassiopeia là biểu tượng của trí tuệ và sự kiêu hãnh. Trong thiên văn học, chòm sao này có hình dạng chữ &quot;W&quot; hoặc &quot;M&quot;, giống như một vương miện, đại diện cho sự hiểu biết và tầm nhìn xa trông rộng." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" vertex="1" parent="1">
+                    <mxGeometry x="-118.84000000000003" y="1150" width="240" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="65" style="edgeStyle=none;html=1;" edge="1" parent="1" source="64" target="60">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="64" value="&lt;strong data-end=&quot;738&quot; data-start=&quot;728&quot;&gt;Lý do:&lt;/strong&gt; Chòm sao Sư Tử đại diện cho sức mạnh, sự kiên trì và lòng dũng cảm. Trong thần thoại, nó liên quan đến con sư tử Nemea mà Hercules phải đánh bại trong 12 chiến công. Đây là biểu tượng của sự không khuất phục trước thử thách." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fa6800;fontColor=#000000;strokeColor=#C73500;" vertex="1" parent="1">
+                    <mxGeometry x="280" y="1290" width="260" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="69" style="edgeStyle=none;html=1;" edge="1" parent="1" source="66" target="68">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="66" value="&lt;strong data-end=&quot;1038&quot; data-start=&quot;1028&quot;&gt;Lý do:&lt;/strong&gt; Ma Kết là biểu tượng của sự chăm chỉ, kiên nhẫn và quyết tâm. Trong chiêm tinh học, Ma Kết là cung hoàng đạo gắn với sự nghiệp và trách nhiệm, đại diện cho những người luôn nỗ lực để đạt được mục tiêu." style="rounded=1;whiteSpace=wrap;html=1;fillColor=light-dark(#d80073, #6db2ff);fontColor=#ffffff;strokeColor=#A50040;" vertex="1" parent="1">
+                    <mxGeometry x="-430" y="1750" width="200" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="68" value="" style="shape=image;imageAspect=0;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;image=https://vuongphat.com.vn/wp-content/uploads/2022/07/Untitled-13.jpg;" vertex="1" parent="1">
+                    <mxGeometry x="-780" y="1920" width="249" height="142" as="geometry"/>
+                </mxCell>
+                <mxCell id="73" style="edgeStyle=none;html=1;" edge="1" parent="1" source="70" target="72">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="70" value="&lt;strong data-end=&quot;1309&quot; data-start=&quot;1299&quot;&gt;Lý do:&lt;/strong&gt; Orion là một trong những chòm sao dễ nhận biết nhất trên bầu trời và gắn liền với niềm vui khi quan sát thiên văn. Trong thần thoại, Orion là một thợ săn tài ba, đại diện cho sự tự do và tận hưởng cuộc sống." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e51400;fontColor=#ffffff;strokeColor=#B20000;" vertex="1" parent="1">
+                    <mxGeometry x="-84.42000000000007" y="1810" width="188.84" height="111" as="geometry"/>
+                </mxCell>
+                <mxCell id="72" value="" style="shape=image;imageAspect=0;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;image=https://static.vecteezy.com/system/resources/previews/009/763/356/original/illustration-of-the-constellation-orion-pegasus-constellation-in-night-sky-hunter-orion-from-ancient-greek-mythology-vector.jpg;" vertex="1" parent="1">
+                    <mxGeometry x="-114.5" y="2000" width="249" height="199" as="geometry"/>
+                </mxCell>
+                <mxCell id="77" style="edgeStyle=none;html=1;" edge="1" parent="1" source="74" target="76">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="74" value="&lt;strong data-end=&quot;1594&quot; data-start=&quot;1584&quot;&gt;Lý do:&lt;/strong&gt; Ursa Major (Gấu Lớn) là một trong những chòm sao quan trọng nhất, đại diện cho sức mạnh và khả năng dẫn đường (vì chứa sao Bắc Đẩu). Nó biểu tượng cho sự bền bỉ và khả năng định hướng để đạt được thành công." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#008a00;strokeColor=#005700;fontColor=#ffffff;" vertex="1" parent="1">
+                    <mxGeometry x="235" y="1710" width="190" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="76" value="" style="shape=image;imageAspect=0;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;image=https://th.bing.com/th/id/OIP.pWQOU84KTtST4IIjr9uPvgHaE8?rs=1&amp;pid=ImgDetMainhttps://th.bing.com/th/id/OIP.pWQOU84KTtST4IIjr9uPvgHaE8?rs=1&amp;pid=ImgDetMain;" vertex="1" parent="1">
+                    <mxGeometry x="400" y="1900" width="299" height="199" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
