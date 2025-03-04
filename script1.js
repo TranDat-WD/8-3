@@ -1,4 +1,9 @@
-const avatar = ["assets/avatar/HH-Ava.jpg", "assets/avatar/TD-Ava.png"];
+const avatar = [
+  "assets/avatar/HH-Ava.jpg",
+  "assets/avatar/TD-Ava.png",
+  "assets/avatar/PT-Ava.jpg",
+  "assets/avatar/PToa-Ava.jpg",
+];
 
 /* Quote */
 
@@ -206,6 +211,29 @@ function start() {
     "Ngày hôm nay bạn sẽ được chòm sao " +
     nhomChomSao[a - 1].name +
     " chúc phúc.";
+  document.querySelectorAll(".consName").forEach((span) => {
+    span.textContent = nhomChomSao[a - 1].name;
+  });
+
+  const buttons = document.querySelectorAll(".chat-quote button");
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", function () {
+      const shamanChat = document.querySelector(".chat-container-shaman");
+      const userChat = document.querySelector(".chat-container-user");
+
+      if (shamanChat) {
+        if (button.className == "choice1") {
+          const newChat = shamanChat.cloneNode(true);
+          const chatQuote = document.querySelector(".chat-quote");
+          chatQuote.parentNode.insertBefore(newChat, chatQuote);
+
+          const newChatUser = userChat.cloneNode(true);
+          chatQuote.parentNode.insertBefore(newChatUser, chatQuote);
+        }
+      }
+    });
+  });
 }
 
 document.addEventListener("DOMContentLoaded", start);
