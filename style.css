@@ -52,6 +52,7 @@ body {
   display: flex;
   width: calc(100% - 20px);
   height: 95%;
+  max-height: 95%;
   background-color: #d69ade;
   border-radius: 25px;
   justify-items: center;
@@ -68,6 +69,7 @@ body {
 }
 
 .explain-container {
+  max-height: calc(100% - 60px);
   background-color: #aa60c8;
   justify-items: left;
   font-size: calc(0.35rem + 1vw);
