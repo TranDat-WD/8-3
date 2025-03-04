@@ -98,6 +98,12 @@ p {
   scroll-snap-type: x mandatory;
 }
 
+.chat-container-shaman,
+.chat-container-user {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 .chat-container-shaman {
   width: 75%;
   height: fit-content;
@@ -164,6 +170,7 @@ p {
   align-self: flex-end;
   margin: 5px;
   margin-left: 0px;
+  margin-right: 0px;
   border-radius: 25px;
   width: calc(100% - (95px + 15px * 2));
   height: fit-content;

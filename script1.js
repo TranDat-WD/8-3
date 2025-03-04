@@ -227,6 +227,26 @@ function start() {
           const newChat = shamanChat.cloneNode(true);
           const chatQuote = document.querySelector(".chat-quote");
           chatQuote.parentNode.insertBefore(newChat, chatQuote);
+          newChat.querySelector(".chat-text-container p").textContent =
+            nhomChomSao[a - 1].description;
+
+          const newChatUser = userChat.cloneNode(true);
+          chatQuote.parentNode.insertBefore(newChatUser, chatQuote);
+        } else if (button.className == "choice2") {
+          const newChat = shamanChat.cloneNode(true);
+          const chatQuote = document.querySelector(".chat-quote");
+          chatQuote.parentNode.insertBefore(newChat, chatQuote);
+          newChat.querySelector(".chat-text-container p").textContent =
+            nhomChomSao[a - 1].Represent;
+
+          const newChatUser = userChat.cloneNode(true);
+          chatQuote.parentNode.insertBefore(newChatUser, chatQuote);
+        } else if (button.className == "choice3") {
+          const newChat = shamanChat.cloneNode(true);
+          const chatQuote = document.querySelector(".chat-quote");
+          chatQuote.parentNode.insertBefore(newChat, chatQuote);
+          newChat.querySelector(".chat-text-container p").textContent =
+            nhomChomSao[a - 1].reasonForRepresentation;
 
           const newChatUser = userChat.cloneNode(true);
           chatQuote.parentNode.insertBefore(newChatUser, chatQuote);
