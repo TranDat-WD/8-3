@@ -9,8 +9,10 @@ document.addEventListener("DOMContentLoaded", function () {
     "assets/avatar/PT-Ava.jpg",
     "assets/avatar/PToa-Ava.jpg",
   ];
-  document.getElementById("avatar").src =
-    avatar[getRandomInt(0, avatar.length - 1)];
+  localStorage.setItem(
+    "shamanAvatar",
+    avatar[getRandomInt(0, avatar.length - 1)]
+  );
   const overlay = document.getElementById("overlay");
 
   const video = document.getElementById("video");

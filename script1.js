@@ -196,6 +196,7 @@ function start() {
         "assets/cards/Ma kết.png";
       break;
   }
+  document.getElementById("avatar").src = localStorage.getItem("shamanAvatar");
   document.getElementById("header").textContent =
     nhomChomSao[chuDeChuc - 1].name;
   document.getElementById("text").textContent =
