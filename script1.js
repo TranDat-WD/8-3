@@ -7,112 +7,109 @@ const avatar = [
 
 /* Quote */
 
-const loveQuotes = [
-  "Love is not about how many days, months, or years you have been together. It's all about how much you love each other every single day.",
-  "The best thing to hold onto in life is each other.",
-  "Love is when the other person's happiness is more important than your own.",
-  "To love and be loved is to feel the sun from both sides.",
-  "A true love story never ends.",
-  "Love is not finding someone to live with, it’s finding someone you can’t live without.",
-  "You don't marry someone you can live with; you marry someone you cannot live without.",
-  "Love is not about possession, it’s about appreciation.",
-  "A great relationship doesn’t happen because of the love you had in the beginning, but how well you continue building love until the end.",
-  "Love is composed of a single soul inhabiting two bodies.",
-  "Love is not something you look for. Love is something you become.",
-  "The greatest happiness of life is the conviction that we are loved.",
-  "True love is rare, and it's the only thing that gives life real meaning.",
-  "You don’t love someone for their looks or their clothes, but because they sing a song only your heart can understand.",
-  "The best proof of love is trust.",
-];
-
-const learningQuotes = [
-  "Live as if you were to die tomorrow. Learn as if you were to live forever.",
-  "An investment in knowledge pays the best interest.",
-  "The beautiful thing about learning is that no one can take it away from you.",
-  "Education is the passport to the future, for tomorrow belongs to those who prepare for it today.",
-  "The capacity to learn is a gift; the ability to learn is a skill; the willingness to learn is a choice.",
-  "A person who never made a mistake never tried anything new.",
-  "Learning never exhausts the mind.",
-  "The mind is not a vessel to be filled but a fire to be kindled.",
-  "Tell me and I forget, teach me and I may remember, involve me and I learn.",
-  "Knowledge is power.",
-  "A journey of a thousand miles begins with a single step.",
-  "You are always a student, never a master. You have to keep moving forward.",
-  "Every day is a new opportunity to learn and grow.",
-  "The only true wisdom is in knowing you know nothing.",
-  "Never stop learning, because life never stops teaching.",
-];
-
-const motivationQuotes = [
-  "Don’t watch the clock; do what it does. Keep going.",
-  "Opportunities don't happen. You create them.",
-  "Success is not the key to happiness. Happiness is the key to success.",
-  "Hardships often prepare ordinary people for an extraordinary destiny.",
-  "You miss 100% of the shots you don’t take.",
-  "The only way to do great work is to love what you do.",
-  "Your limitation—it’s only your imagination.",
-  "Do what you can, with what you have, where you are.",
-  "Dream big and dare to fail.",
-  "Don't be pushed around by the fears in your mind. Be led by the dreams in your heart.",
-  "Believe you can and you're halfway there.",
-  "Be stronger than your excuses.",
-  "Don't wait for opportunity. Create it.",
-  "Every accomplishment starts with the decision to try.",
-  "The best way to predict the future is to create it.",
-];
-
-const workQuotes = [
-  "Choose a job you love, and you will never have to work a day in your life.",
-  "Success is the sum of small efforts, repeated day in and day out.",
-  "Pleasure in the job puts perfection in the work.",
-  "The only way to do great work is to love what you do.",
-  "Work hard in silence, let success make the noise.",
-  "Don’t stop when you’re tired. Stop when you’re done.",
-  "Do more than is required. What is the distance between someone who achieves their goals consistently and those who spend their lives merely following? The extra mile.",
-  "It’s not about having time. It’s about making time.",
-  "If you want to achieve greatness, stop asking for permission.",
-  "Dreams don’t work unless you do.",
-  "The harder you work for something, the greater you’ll feel when you achieve it.",
-  "Don’t count the days, make the days count.",
-  "You were born to be real, not perfect.",
-  "Go as far as you can see; when you get there, you’ll be able to see further.",
-  "Opportunities are usually disguised as hard work, so most people don’t recognize them.",
-];
-
-const happinessQuotes = [
-  "Happiness is not something ready made. It comes from your own actions.",
-  "The purpose of our lives is to be happy.",
-  "Happiness depends upon ourselves.",
-  "The secret of happiness is to find joy in the simplest of things.",
-  "Happiness is the only thing that multiplies when you share it.",
-  "Do what makes your soul shine.",
-  "Happiness is not by chance, but by choice.",
-  "Happiness is when what you think, what you say, and what you do are in harmony.",
-  "For every minute you are angry, you lose sixty seconds of happiness.",
-  "Happiness is not a goal; it is a by-product of a life well-lived.",
-  "Life is short, and it's up to you to make it sweet.",
-  "The key to being happy is knowing you have the power to choose what to accept and what to let go.",
-  "Smile more. Worry less.",
-  "A happy heart makes a cheerful face.",
-  "True happiness is not found in material things but in the love and kindness we share.",
-];
-
-const successQuotes = [
-  "Success is not final, failure is not fatal: it is the courage to continue that counts.",
-  "The way to get started is to quit talking and begin doing.",
-  "Do what you love and success will follow.",
-  "Success is not in what you have, but who you are.",
-  "The road to success and the road to failure are almost exactly the same.",
-  "Success is a journey, not a destination.",
-  "If you want to achieve greatness stop asking for permission.",
-  "Great things never come from comfort zones.",
-  "A little progress each day adds up to big results.",
-  "I never dreamed about success. I worked for it.",
-  "Success is achieved and maintained by those who try and keep trying.",
-  "Your success is only limited by your desire.",
-  "If you set your goals ridiculously high and it's a failure, you will fail above everyone else's success.",
-  "Success is liking yourself, liking what you do, and liking how you do it.",
-  "To succeed in life, you need two things: ignorance and confidence.",
+const nhomCauChuc = [
+  [
+    "Nhớ nhé, tình yêu không đếm bằng ngày tháng, mà bằng cách bạn yêu thương nhau mỗi ngày!",
+    "Điều tuyệt nhất trong cuộc sống là có ai đó để nắm tay và cùng nhau đi qua mọi sóng gió.",
+    "Yêu thương thật sự là khi hạnh phúc của người ấy quan trọng hơn cả bản thân mình.",
+    "Được yêu và yêu ai đó là cảm giác như được sưởi ấm từ cả hai phía của mặt trời vậy!",
+    "Một câu chuyện tình yêu chân thành thì không bao giờ có hồi kết.",
+    "Tình yêu đích thực không phải là tìm một người để sống cùng, mà là tìm một người mà bạn không thể sống thiếu.",
+    "Kết hôn không chỉ là tìm người có thể sống cùng, mà là tìm người mà bạn không thể thiếu trong cuộc sống.",
+    "Yêu thương không phải là sở hữu, mà là trân trọng từng khoảnh khắc bên nhau.",
+    "Một mối quan hệ bền vững không chỉ dựa vào tình cảm ban đầu, mà còn là cách bạn vun đắp nó mỗi ngày.",
+    "Tình yêu thực sự là hai tâm hồn đồng điệu trong một nhịp đập.",
+    "Đừng tìm kiếm tình yêu, hãy trở thành tình yêu!",
+    "Hạnh phúc lớn nhất trong đời là biết rằng bạn được yêu thương.",
+    "Tình yêu đích thực là hiếm có, và đó cũng là điều mang lại ý nghĩa cho cuộc sống.",
+    "Bạn không yêu ai đó vì ngoại hình hay những thứ bên ngoài, mà vì họ chạm đến tâm hồn bạn.",
+    "Bằng chứng lớn nhất của tình yêu chính là niềm tin.",
+  ],
+  [
+    "Sống như thể hôm nay là ngày cuối cùng, và học như thể bạn sẽ sống mãi mãi!",
+    "Đầu tư vào tri thức luôn mang lại lợi nhuận cao nhất!",
+    "Điều tuyệt vời nhất về việc học là không ai có thể lấy nó khỏi bạn.",
+    "Giáo dục là tấm vé thông hành cho tương lai, vì ngày mai thuộc về những ai chuẩn bị từ hôm nay!",
+    "Khả năng học là một món quà, học tốt là một kỹ năng, còn muốn học hay không là lựa chọn của bạn!",
+    "Nếu bạn chưa từng mắc sai lầm, có lẽ bạn chưa bao giờ thử điều gì mới.",
+    "Học tập không bao giờ làm tâm trí mệt mỏi!",
+    "Tâm trí không phải là chiếc bình để lấp đầy, mà là ngọn lửa cần được thắp sáng.",
+    "Hãy tham gia vào quá trình học hỏi, vì chỉ nghe và nhìn không đủ để ghi nhớ đâu!",
+    "Kiến thức chính là sức mạnh, đừng bao giờ ngừng trau dồi!",
+    "Hành trình vạn dặm luôn bắt đầu từ một bước chân đầu tiên.",
+    "Bạn luôn là một học sinh, không bao giờ là bậc thầy. Hãy tiếp tục tiến về phía trước!",
+    "Mỗi ngày là một cơ hội mới để học và phát triển bản thân.",
+    "Thông thái thực sự nằm ở chỗ biết rằng mình chẳng biết gì cả!",
+    "Đừng bao giờ ngừng học, vì cuộc sống sẽ không bao giờ ngừng dạy bạn những bài học mới.",
+  ],
+  [
+    "Đừng chỉ nhìn đồng hồ, hãy hành động như cách nó vận hành - luôn tiến về phía trước!",
+    "Cơ hội không tự nhiên xuất hiện, mà do bạn tạo ra!",
+    "Thành công không phải là chìa khóa của hạnh phúc, mà hạnh phúc chính là chìa khóa của thành công!",
+    "Những khó khăn hôm nay sẽ tạo nên một tương lai tuyệt vời nếu bạn không bỏ cuộc!",
+    "Bạn bỏ lỡ 100% cơ hội nếu bạn không dám thử!",
+    "Cách duy nhất để làm điều vĩ đại là yêu những gì bạn làm!",
+    "Giới hạn của bạn thực ra chỉ là do trí tưởng tượng của bạn đặt ra thôi!",
+    "Làm những gì bạn có thể, với những gì bạn có, ngay từ bây giờ!",
+    "Hãy mơ lớn và đừng sợ thất bại!",
+    "Đừng để nỗi sợ điều khiển bạn, hãy để ước mơ dẫn lối cho bạn!",
+    "Tin rằng bạn làm được là bạn đã đi được nửa chặng đường rồi!",
+    "Hãy mạnh mẽ hơn bất kỳ lý do nào khiến bạn trì hoãn!",
+    "Cơ hội không đến từ việc chờ đợi, nó đến từ hành động!",
+    "Mọi thành công đều bắt đầu từ quyết định dám thử!",
+    "Cách tốt nhất để dự đoán tương lai là tự tay tạo ra nó!",
+  ],
+  [
+    "Hãy chọn một công việc bạn yêu thích, và bạn sẽ không phải làm việc một ngày nào trong đời.",
+    "Thành công là tổng hợp của những nỗ lực nhỏ bé, lặp đi lặp lại mỗi ngày.",
+    "Niềm vui trong công việc tạo nên sự hoàn hảo trong công việc.",
+    "Cách duy nhất để làm việc vĩ đại là yêu thích những gì bạn làm.",
+    "Hãy làm việc chăm chỉ trong im lặng, để thành công tự lên tiếng.",
+    "Đừng dừng lại khi bạn mệt mỏi. Hãy dừng lại khi bạn đã hoàn thành.",
+    "Hãy làm nhiều hơn những gì được yêu cầu. Khoảng cách giữa người luôn đạt được mục tiêu và người chỉ mãi đi theo là gì? Chính là sự nỗ lực vượt xa mong đợi.",
+    "Không phải có thời gian mới làm, mà là dành thời gian để làm.",
+    "Nếu bạn muốn đạt được sự vĩ đại, hãy ngừng xin phép.",
+    "Ước mơ không hoạt động trừ khi bạn hành động.",
+    "Bạn càng nỗ lực vì điều gì đó, bạn sẽ càng cảm thấy tuyệt vời khi đạt được nó.",
+    "Đừng đếm ngày, hãy khiến từng ngày trở nên ý nghĩa.",
+    "Bạn được sinh ra để là chính mình, không phải để hoàn hảo.",
+    "Hãy đi xa nhất có thể; khi đến đó, bạn sẽ thấy được xa hơn.",
+    "Cơ hội thường được ngụy trang dưới dạng công việc khó khăn, vì vậy hầu hết mọi người không nhận ra chúng.",
+  ],
+  [
+    "Hạnh phúc không phải là thứ có sẵn. Nó đến từ chính hành động của bạn.",
+    "Mục đích của cuộc sống chúng ta là để hạnh phúc.",
+    "Hạnh phúc phụ thuộc vào chính chúng ta.",
+    "Bí quyết của hạnh phúc là tìm thấy niềm vui trong những điều giản dị nhất.",
+    "Hạnh phúc là thứ duy nhất nhân lên khi bạn chia sẻ nó.",
+    "Hãy làm những gì khiến tâm hồn bạn tỏa sáng.",
+    "Hạnh phúc không đến từ sự ngẫu nhiên, mà đến từ sự lựa chọn.",
+    "Hạnh phúc là khi những gì bạn nghĩ, bạn nói, và bạn làm hòa hợp với nhau.",
+    "Mỗi phút bạn tức giận là bạn đã mất đi sáu mươi giây hạnh phúc.",
+    "Hạnh phúc không phải là mục tiêu; nó là kết quả của một cuộc sống ý nghĩa.",
+    "Cuộc sống ngắn ngủi, và chính bạn quyết định làm cho nó ngọt ngào.",
+    "Chìa khóa để hạnh phúc là biết rằng bạn có quyền chọn những gì cần giữ lại và những gì cần buông bỏ.",
+    "Cười nhiều hơn. Lo lắng ít hơn.",
+    "Một trái tim vui vẻ tạo nên một khuôn mặt rạng rỡ.",
+    "Hạnh phúc thực sự không nằm ở vật chất mà nằm trong tình yêu và lòng tốt mà chúng ta chia sẻ.",
+  ],
+  [
+    "Thành công không phải là kết thúc, thất bại không phải là kết cục: điều quan trọng là có đủ dũng khí để tiếp tục.",
+    "Cách để bắt đầu là ngừng nói và bắt tay vào làm.",
+    "Hãy làm điều bạn yêu thích và thành công sẽ theo sau.",
+    "Thành công không nằm ở những gì bạn có, mà ở con người bạn.",
+    "Con đường dẫn đến thành công và con đường dẫn đến thất bại gần như giống hệt nhau.",
+    "Thành công là một hành trình, không phải là điểm đến.",
+    "Nếu bạn muốn đạt được sự vĩ đại, hãy ngừng xin phép.",
+    "Những điều vĩ đại không bao giờ đến từ vùng an toàn.",
+    "Một chút tiến bộ mỗi ngày sẽ tạo ra kết quả lớn.",
+    "Tôi chưa bao giờ mơ về thành công. Tôi làm việc để có được nó.",
+    "Thành công được tạo ra và duy trì bởi những người không ngừng cố gắng.",
+    "Thành công của bạn chỉ bị giới hạn bởi khát khao của bạn.",
+    "Nếu bạn đặt mục tiêu cao đến mức không tưởng và thất bại, bạn vẫn sẽ thất bại ở mức cao hơn thành công của người khác.",
+    "Thành công là yêu thích chính mình, yêu thích những gì mình làm và yêu thích cách mình làm điều đó.",
+    "Để thành công trong cuộc sống, bạn cần hai thứ: sự ngu dốt và sự tự tin.",
+  ],
 ];
 
 /* Chom sao */
@@ -122,7 +119,7 @@ const nhomChomSao = [
     name: "Thiên nga",
     description:
       "Chòm sao Thiên Nga 天鵝, (tiếng La Tinh: Cygnus) là một trong 48 chòm sao Ptolemy và cũng là một trong 88 chòm sao hiện đại, mang hình ảnh con thiên nga.",
-    Represent: "Chòm sao Thiên Nga là đại diện của tình yêu",
+    Represent: "Chòm sao Thiên Nga là đại diện của tình yêu.",
     reasonForRepresentation:
       "Thiên Nga gắn liền với thần thoại Hy Lạp về tình yêu bất diệt. Zeus hóa thành thiên nga để quyến rũ nữ thần Leda. Ngoài ra, nó còn biểu tượng cho sự thủy chung vì thiên nga thường có bạn đời duy nhất trong suốt cuộc đời.",
   }),
@@ -175,10 +172,12 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+let button, shamanChat, userChat;
+
 function start() {
-  const a = localStorage.getItem("Topic");
+  const chuDeChuc = localStorage.getItem("Topic");
   const cauChucSo = localStorage.getItem("Quote");
-  switch (a) {
+  switch (chuDeChuc) {
     case "1":
       document.getElementById("cards-constellation").src =
         "assets/cards/Thiên nga.png";
@@ -206,53 +205,81 @@ function start() {
   }
   document.getElementById("avatar").src =
     avatar[getRandomInt(0, avatar.length - 1)];
-  document.getElementById("header").textContent = nhomChomSao[a - 1].name;
+  document.getElementById("header").textContent =
+    nhomChomSao[chuDeChuc - 1].name;
   document.getElementById("text").textContent =
     "Ngày hôm nay bạn sẽ được chòm sao " +
-    nhomChomSao[a - 1].name +
+    nhomChomSao[chuDeChuc - 1].name +
     " chúc phúc.";
   document.querySelectorAll(".consName").forEach((span) => {
-    span.textContent = nhomChomSao[a - 1].name;
+    span.textContent = nhomChomSao[chuDeChuc - 1].name;
   });
+  button = document.getElementById("choice");
+  shamanChat = document.querySelector(".chat-container-shaman");
+  userChat = document.querySelector(".chat-container-user");
+  let previousUserChat = document.querySelector(
+    ".chat-container-user .chat-text-container .text"
+  );
+  let content = 1;
 
-  const buttons = document.querySelectorAll(".chat-quote button");
+  function clone(chatContent, buttonContent) {
+    previousUserChat.textContent = button.textContent;
+    const newChat = shamanChat.cloneNode(true);
+    const chatQuote = document.querySelector(".chat-quote");
+    chatQuote.parentNode.insertBefore(newChat, chatQuote);
+    newChat.querySelector(".chat-text-container p").textContent = chatContent;
 
-  buttons.forEach((button) => {
-    button.addEventListener("click", function () {
-      const shamanChat = document.querySelector(".chat-container-shaman");
-      const userChat = document.querySelector(".chat-container-user");
+    const newChatUser = userChat.cloneNode(true);
+    newChatUser.querySelector(
+      ".chat-container-user .chat-text-container .text"
+    ).textContent = "...";
+    previousUserChat = newChatUser.querySelector(
+      ".chat-container-user .chat-text-container .text"
+    );
+    chatQuote.parentNode.insertBefore(newChatUser, chatQuote);
+    button.textContent = buttonContent;
+  }
 
-      if (shamanChat) {
-        if (button.className == "choice1") {
-          const newChat = shamanChat.cloneNode(true);
-          const chatQuote = document.querySelector(".chat-quote");
-          chatQuote.parentNode.insertBefore(newChat, chatQuote);
-          newChat.querySelector(".chat-text-container p").textContent =
-            nhomChomSao[a - 1].description;
-
-          const newChatUser = userChat.cloneNode(true);
-          chatQuote.parentNode.insertBefore(newChatUser, chatQuote);
-        } else if (button.className == "choice2") {
-          const newChat = shamanChat.cloneNode(true);
-          const chatQuote = document.querySelector(".chat-quote");
-          chatQuote.parentNode.insertBefore(newChat, chatQuote);
-          newChat.querySelector(".chat-text-container p").textContent =
-            nhomChomSao[a - 1].Represent;
-
-          const newChatUser = userChat.cloneNode(true);
-          chatQuote.parentNode.insertBefore(newChatUser, chatQuote);
-        } else if (button.className == "choice3") {
-          const newChat = shamanChat.cloneNode(true);
-          const chatQuote = document.querySelector(".chat-quote");
-          chatQuote.parentNode.insertBefore(newChat, chatQuote);
-          newChat.querySelector(".chat-text-container p").textContent =
-            nhomChomSao[a - 1].reasonForRepresentation;
-
-          const newChatUser = userChat.cloneNode(true);
-          chatQuote.parentNode.insertBefore(newChatUser, chatQuote);
-        }
-      }
-    });
+  button.addEventListener("click", () => {
+    switch (content) {
+      case 1:
+        clone(
+          nhomChomSao[chuDeChuc - 1].description,
+          "Vậy chòm sao " +
+            nhomChomSao[chuDeChuc - 1].name +
+            " đại diện cho điều gì?"
+        );
+        content++;
+        break;
+      case 2:
+        clone(
+          nhomChomSao[chuDeChuc - 1].Represent,
+          "Tại sao chòm sao " +
+            nhomChomSao[chuDeChuc - 1].name +
+            " lại đại diện cho điều đó?"
+        );
+        content++;
+        break;
+      case 3:
+        clone(
+          nhomChomSao[chuDeChuc - 1].reasonForRepresentation,
+          "Vậy hôm nay chòm sao " +
+            nhomChomSao[chuDeChuc - 1].name +
+            " muốn nhắn gửi với tôi điều gì?"
+        );
+        content++;
+        break;
+      case 4:
+        clone(
+          "Để xem nào... À đây rồi, hôm nay chòm sao muốn gửi đến bạn thông điệp: \n" +
+            '"' +
+            nhomCauChuc[chuDeChuc - 1][cauChucSo] +
+            '"',
+          "..."
+        );
+        content++;
+        break;
+    }
   });
 }
 
