@@ -3,6 +3,14 @@ function getRandomInt(min, max) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
+  const avatar = [
+    "assets/avatar/HH-Ava.jpg",
+    "assets/avatar/TD-Ava.png",
+    "assets/avatar/PT-Ava.jpg",
+    "assets/avatar/PToa-Ava.jpg",
+  ];
+  document.getElementById("avatar").src =
+    avatar[getRandomInt(0, avatar.length - 1)];
   const overlay = document.getElementById("overlay");
 
   const video = document.getElementById("video");
@@ -29,24 +37,24 @@ document.addEventListener("DOMContentLoaded", function () {
     if ("IntersectionObserver" in window) {
       let observer = new IntersectionObserver((entries) => {
         if (entries[0].isIntersecting) {
-          video.load(); // Chỉ tải khi video vào khung nhìn
+          video.load();
           observer.disconnect();
         }
       });
       observer.observe(video);
     } else {
-      video.load(); // Load ngay nếu trình duyệt không hỗ trợ IntersectionObserver
+      video.load();
     }
   });
 
-  // const lastVisit = localStorage.getItem("visitedToday");
-  // const today = new Date().toDateString();
+  const lastVisit = localStorage.getItem("visitedToday");
+  const today = new Date().toDateString();
 
-  // if (lastVisit === today) {
-  //   window.location.href = "quote-expl.html";
-  // } else {
-  //   localStorage.setItem("visitedToday", today);
-  // }
+  if (lastVisit === today) {
+    window.location.href = "quote-expl.html";
+  } else {
+    localStorage.setItem("visitedToday", today);
+  }
 });
 
 window.addEventListener("DOMContentLoaded", () => {

@@ -1,10 +1,3 @@
-const avatar = [
-  "assets/avatar/HH-Ava.jpg",
-  "assets/avatar/TD-Ava.png",
-  "assets/avatar/PT-Ava.jpg",
-  "assets/avatar/PToa-Ava.jpg",
-];
-
 /* Quote */
 
 const nhomCauChuc = [
@@ -203,8 +196,6 @@ function start() {
         "assets/cards/Ma kết.png";
       break;
   }
-  document.getElementById("avatar").src =
-    avatar[getRandomInt(0, avatar.length - 1)];
   document.getElementById("header").textContent =
     nhomChomSao[chuDeChuc - 1].name;
   document.getElementById("text").textContent =
