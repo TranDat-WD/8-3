@@ -168,8 +168,36 @@ function getRandomInt(min, max) {
 let button, shamanChat, userChat;
 
 function start() {
+  let audio = document.getElementById("background-audio");
+  audio.muted = false;
+  audio.volume = 0.05;
   const chuDeChuc = localStorage.getItem("Topic");
   const cauChucSo = localStorage.getItem("Quote");
+  const shaman = [
+    (HoangHung = {
+      name: "Hoàng Hưng",
+      avatar: "assets/avatar/HH-Ava.jpg",
+      quote:
+        "Chúc bạn có một ngày 8/3 tràn đầy năng lượng, ý nghĩa và thật hạnh phúc. Luôn là những bông hoa tươi sáng với nụ cười luôn nở trên môi, đẹp gái nhất cái trường này.",
+    }),
+    (PhucTrong = {
+      name: "Phúc Trọng",
+      avatar: "assets/avatar/PT-Ava.jpg",
+      quote: "Chúc bạn 8/3 sẽ thật ý nghĩa và trọn vẹn nhất.",
+    }),
+    (PhuocToa = {
+      name: "Phước Tỏa",
+      avatar: "assets/avatar/PToa-Ava.jpg",
+      quote: "Chúc bạn 8/3 sẽ luôn toả sáng và rực rỡ.",
+    }),
+    (TrietDat = {
+      name: "Triết Đạt",
+      avatar: "assets/avatar/TD-Ava.png",
+      quote:
+        'Chúc "bông hoa" ngày nào cũng xinh đẹp như hôm nay, chúc cho bạn luôn tươi vui như vậy, như lúc đang cười mỉm khi đọc những dòng này vậy🥰.',
+    }),
+  ];
+  console.log(localStorage.getItem("shamanID"));
   switch (chuDeChuc) {
     case "1":
       document.getElementById("cards-constellation").src =
@@ -196,13 +224,18 @@ function start() {
         "assets/cards/Ma kết.png";
       break;
   }
-  document.getElementById("avatar").src = localStorage.getItem("shamanAvatar");
+  document.getElementById("avatar").src =
+    shaman[localStorage.getItem("shamanID")].avatar;
   document.getElementById("header").textContent =
     nhomChomSao[chuDeChuc - 1].name;
   document.getElementById("text").textContent =
-    "Ngày hôm nay bạn sẽ được chòm sao " +
+    "Xin chào👋 tôi là nhà chiêm tinh " +
+    shaman[localStorage.getItem("shamanID")].name +
+    ", nhân dịp 8/3 tôi muốn chúc bạn: " +
+    shaman[localStorage.getItem("shamanID")].quote +
+    " Tôi có thể xem giúp bạn một số thông điệp thông qua chòm sao " +
     nhomChomSao[chuDeChuc - 1].name +
-    " chúc phúc.";
+    ".";
   document.querySelectorAll(".consName").forEach((span) => {
     span.textContent = nhomChomSao[chuDeChuc - 1].name;
   });

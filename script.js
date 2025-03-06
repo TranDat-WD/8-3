@@ -3,16 +3,9 @@ function getRandomInt(min, max) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  const avatar = [
-    "assets/avatar/HH-Ava.jpg",
-    "assets/avatar/TD-Ava.png",
-    "assets/avatar/PT-Ava.jpg",
-    "assets/avatar/PToa-Ava.jpg",
-  ];
-  localStorage.setItem(
-    "shamanAvatar",
-    avatar[getRandomInt(0, avatar.length - 1)]
-  );
+  let audio = document.getElementById("background-audio");
+  audio.muted = false;
+  audio.volume = 0.05;
   const overlay = document.getElementById("overlay");
 
   const video = document.getElementById("video");
@@ -49,18 +42,14 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  const lastVisit = localStorage.getItem("visitedToday");
-  const today = new Date().toDateString();
+  // const lastVisit = localStorage.getItem("visitedToday");
+  // const today = new Date().toDateString();
 
-  if (lastVisit === today) {
-    window.location.href = "quote-expl.html";
-  } else {
-    localStorage.setItem("visitedToday", today);
-  }
-});
-
-window.addEventListener("DOMContentLoaded", () => {
-  const audio = document.getElementById("audio");
+  // if (lastVisit === today) {
+  //   window.location.href = "quote-expl.html";
+  // } else {
+  //   localStorage.setItem("visitedToday", today);
+  // }
 });
 
 function showCards() {
@@ -104,7 +93,31 @@ function theOtherTwo(number) {
 }
 
 function resetCards() {
-  localStorage.setItem("avatar", getRandomInt(0, 1));
+  const shaman = [
+    (HoangHung = {
+      name: "Hoàng Hưng",
+      avatar: "assets/avatar/HH-Ava.jpg",
+      quote:
+        "Chúc bạn có một ngày 8/3 tràn đầy năng lượng, ý nghĩa và thật hạnh phúc. Luôn là những bông hoa tươi sáng với nụ cười luôn nở trên môi, đẹp gái nhất cái trường này.",
+    }),
+    (PhucTrong = {
+      name: "Phúc Trọng",
+      avatar: "assets/avatar/PT-Ava.jpg",
+      quote: "Chúc bạn 8/3 sẽ thật ý nghĩa và trọn vẹn nhất.",
+    }),
+    (PhuocToa = {
+      name: "Phước Tỏa",
+      avatar: "assets/avatar/PToa-Ava.jpg",
+      quote: "Chúc bạn 8/3 sẽ luôn toả sáng và rực rỡ.",
+    }),
+    (TrietDat = {
+      name: "Triết Đạt",
+      avatar: "assets/avatar/TD-Ava.png",
+      quote:
+        'Chúc "bông hoa" ngày nào cũng xinh đẹp như hôm nay, chúc cho bạn luôn tươi vui như vậy, như lúc đang cười mỉm khi đọc những dòng này vậy🥰.',
+    }),
+  ];
+  localStorage.setItem("shamanID", getRandomInt(0, shaman.length - 1));
   window.location.href = "quote-expl.html";
 }
 

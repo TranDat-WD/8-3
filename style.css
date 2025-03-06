@@ -69,11 +69,11 @@ body {
 }
 
 .explain-container {
-  max-height: calc(100% - 60px);
   background-color: #aa60c8;
   justify-items: left;
   font-size: calc(0.35rem + 1vw);
   width: 75%;
+  height: calc(100% - 15 * 2px);
 }
 
 .explain-container h1,
