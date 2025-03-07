@@ -124,6 +124,7 @@ p {
 }
 
 .chat-quote {
+  margin: auto;
   justify-self: center;
   margin-top: 5px;
   width: 90%;
@@ -210,6 +211,11 @@ p {
 }
 
 /* quote explain */
+
+.choice {
+  width: 90%;
+  height: fit-content;
+}
 
 .cards-shown-button {
   background-color: #aa60c8;
@@ -340,13 +346,22 @@ p {
   }
 
   .cards-constellation {
-    width: 25%;
-    height: fit-content;
+    width: 30%;
+    height: calc(100% * 100vw / 3);
     align-self: center;
     justify-self: center;
     border-radius: 5%;
     margin-top: 5px;
     margin-left: 0px;
+  }
+
+  .chat-quote {
+    justify-self: center;
+    margin-top: 5px;
+    width: 90%;
+    height: fit-content;
+    background-color: #d69ade;
+    border-radius: 25px;
   }
 
   .explain-container {
