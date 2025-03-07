@@ -28,7 +28,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   max-width: 100%;
 }
 
@@ -201,16 +201,20 @@ p {
 
 .header {
   color: #aa60c8;
-  font-size: 3rem;
+  font-size: calc(1.5rem + 1vw);
   justify-self: center;
   margin: 30px;
   transition: all 0.25s ease;
+  height: auto;
+  width: auto;
 }
 
 /* quote explain */
 
 .cards-shown-button {
   background-color: #aa60c8;
+  width: 30%;
+  height: fit-content;
   align-self: center;
   justify-self: center;
   color: white;
@@ -222,6 +226,7 @@ p {
   transition: all 0.5s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   font-family: "Pacifico", serif;
+  font-size: 1rem;
   transition: all 0.5s ease;
 }
 
@@ -234,8 +239,11 @@ p {
   justify-content: center;
   align-items: center;
   position: absolute;
-  width: 100%;
-  height: 100%;
+  height: 100vh;
+  top: 0; /* Thêm dòng này để cố định trên cùng */
+  left: 0;
+  right: 0;
+  bottom: 0; /* Thay height: 100% bằng top + bottom */
   background-color: #00000081;
 }
 
@@ -243,14 +251,13 @@ p {
   perspective: 1000px;
   pointer-events: none;
   transform: translateY(-100px);
-  opacity: 1;
+  opacity: 0;
   transition: all 0.5s ease;
   background: none;
   border: none;
   justify-content: center;
-  position: relative;
   width: 90vw;
-  height: 90vh;
+  height: fit-content;
   transition: all 0.5s ease;
   border-radius: 5%;
 }
@@ -258,7 +265,6 @@ p {
 .card-inner {
   width: 100%;
   height: 100%;
-  position: relative;
   transform-style: preserve-3d;
   transition: transform 0.75s;
   border-radius: 10%;
@@ -290,8 +296,8 @@ p {
 }
 
 .cards-image {
-  width: 30vw;
-  height: fit-content;
+  width: 90%;
+  height: calc(100% * 100vw / 3);
   transition: all 0.75s ease;
   border-radius: 5%;
 }
