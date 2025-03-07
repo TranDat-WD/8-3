@@ -243,7 +243,7 @@ p {
   perspective: 1000px;
   pointer-events: none;
   transform: translateY(-100px);
-  opacity: 0;
+  opacity: 1;
   transition: all 0.5s ease;
   background: none;
   border: none;
