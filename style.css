@@ -154,16 +154,16 @@ p {
   margin: 15px;
   margin-bottom: 5px;
   background-color: #d69ade;
-  height: 95px;
-  width: 95px;
+  height: 5vw;
+  width: 5vw;
   border-radius: 100%;
   transition: all 0.25s ease;
 }
 
 .avatar {
-  margin: 5px;
-  width: 85px;
-  height: 85px;
+  margin: 5%;
+  width: 90%;
+  height: 90%;
   border-radius: 100%;
   transition: all 0.25s ease;
 }
@@ -184,7 +184,7 @@ p {
   color: #fff;
   text-align: left;
   text-justify: center;
-  margin: 20px;
+  margin: 3.5%;
   transition: all 0.25s ease;
 }
 
@@ -367,17 +367,6 @@ p {
   .explain-container {
     width: 90%;
     height: calc(100% - 25% - 15px * 4);
-  }
-
-  .avatar-container {
-    width: 55px;
-    height: 55px;
-    margin: 10px;
-  }
-
-  .avatar {
-    width: 45px;
-    height: 45px;
   }
 
   .chat-container {
