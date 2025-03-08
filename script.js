@@ -42,14 +42,14 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // const lastVisit = localStorage.getItem("visitedToday");
-  // const today = new Date().toDateString();
+  const lastVisit = localStorage.getItem("visitedToday");
+  const today = new Date().toDateString();
 
-  // if (lastVisit === today) {
-  //   window.location.href = "quote-expl.html";
-  // } else {
-  //   localStorage.setItem("visitedToday", today);
-  // }
+  if (lastVisit === today) {
+    window.location.href = "quote-expl.html";
+  } else {
+    localStorage.setItem("visitedToday", today);
+  }
 });
 
 function showCards() {

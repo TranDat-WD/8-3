@@ -219,7 +219,7 @@ p {
 
 .cards-shown-button {
   background-color: #aa60c8;
-  width: 30%;
+  width: fit-content;
   height: fit-content;
   align-self: center;
   justify-self: center;
@@ -232,7 +232,7 @@ p {
   transition: all 0.5s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   font-family: "Pacifico", serif;
-  font-size: 1rem;
+  font-size: 150%;
   transition: all 0.5s ease;
 }
 
