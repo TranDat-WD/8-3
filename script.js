@@ -3,9 +3,8 @@ function getRandomInt(min, max) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  let audio = document.getElementById("background-audio");
-  audio.muted = false;
-  audio.volume = 0.05;
+  const audio = document.getElementById("background-audio");
+  audio.volume = 0.15;
   const overlay = document.getElementById("overlay");
 
   const video = document.getElementById("video");
@@ -24,6 +23,22 @@ document.addEventListener("DOMContentLoaded", function () {
     setTimeout(() => {
       video.style.opacity = 1;
     }, 750);
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const video = document.getElementById("video");
+
+    if ("IntersectionObserver" in window) {
+      let observer = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting) {
+          video.load(); // Chỉ tải khi video vào khung nhìn
+          observer.disconnect();
+        }
+      });
+      observer.observe(video);
+    } else {
+      video.load(); // Load ngay nếu trình duyệt không hỗ trợ IntersectionObserver
+    }
   });
 
   document.addEventListener("DOMContentLoaded", function () {
