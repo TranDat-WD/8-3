@@ -177,24 +177,51 @@ function start() {
     (HoangHung = {
       name: "Hoàng Hưng",
       avatar: "assets/avatar/HH-Ava.jpg",
-      quote:
-        "Chúc bạn có một ngày 8/3 tràn đầy năng lượng, ý nghĩa và thật hạnh phúc. Luôn là những bông hoa tươi sáng với nụ cười luôn nở trên môi, đẹp gái nhất cái trường này.",
+      quote: [
+        "Chúc bạn có một ngày 8/3 tràn đầy năng lượng, ý nghĩa và thật hạnh phúc. Luôn là những bông hoa tươi sáng với nụ cười luôn nở trên môi, đẹp gái nhất cái trường này",
+      ],
     }),
     (PhucTrong = {
       name: "Phúc Trọng",
       avatar: "assets/avatar/PT-Ava.jpg",
-      quote: "Chúc bạn 8/3 sẽ thật ý nghĩa và trọn vẹn nhất.",
+      quote: [
+        "Chúc bạn ngày 8/3 sẽ mãi là bông hoa tươi sáng giữa cuộc đời này nhé",
+        "Chúc bạn 8/3 và mọi ngày điều hạnh phúc",
+        "Chúc bạn 8/3 năm nay sẽ gặp được nhiều điều tốt lành",
+        "Chúc bạn 8/3 sẽ luôn là bông hoa xinh đẹp nhất của mọi người",
+        "Chúc bạn 8/3 luôn rạng ngời như ánh sáng mặt trời",
+        "Chúc bạn 8/3 sẽ luôn nở nụ cười trên môi",
+      ],
     }),
     (PhuocToa = {
       name: "Phước Tỏa",
       avatar: "assets/avatar/PToa-Ava.jpg",
-      quote: "Chúc bạn 8/3 sẽ luôn toả sáng và rực rỡ.",
+      quote: [
+        "Chúc bạn 8/3 sẽ luôn toả sáng và rực rỡ",
+        "Chúc bạn ngày 8/3 luôn hồn nhiên, xinh đẹp và có nhiều niềm vui",
+        "Chúc bạn 8/3 luôn tràn đầy niềm yêu thương",
+        "Chúc bạn 8/3 sẽ gặp được nhiều điều tốt lành",
+        "Chúc bạn 8/3 luôn rạng ngời và tràn đầy năng lượng",
+        "Chúc bạn 8/3 luôn xinh đẹp và quý phái",
+      ],
     }),
     (TrietDat = {
       name: "Triết Đạt",
       avatar: "assets/avatar/TD-Ava.png",
-      quote:
-        'Chúc "bông hoa" ngày nào cũng xinh đẹp như hôm nay, chúc cho bạn luôn tươi vui như vậy, như lúc đang cười mỉm khi đọc những dòng này vậy🥰.',
+      quote: [
+        'Chúc "bông hoa" ngày nào cũng xinh đẹp như hôm nay, chúc cho bạn luôn tươi vui như vậy, như lúc đang cười mỉm khi đọc những dòng này vậy🥰',
+        "Chúc bạn ngày nào cũng là 8/3 như hôm nay",
+        "Hy vọng mỗi sáng thức dậy, bạn vẫn còn nhớ mình là một bông hồng🌹",
+        "8/3 năm nay bạn đã xinh đẹp rạng ngời, mong 364 ngày còn lại cũng vậy, bạn nhé🥰",
+        "Bạn không chỉ là một bông hoa tươi đẹp, bạn còn là một tia nắng cho thế giới, nhớ nhé✨",
+        "Hãy luôn tỏa sáng theo cách của mình, bạn đặc biệt hơn bạn nghĩ☺️",
+        "Chúc bạn ngày càng xinh đẹp, tiền đầy ví, crush để ý, cuộc sống dư vị🥰",
+        "Hôm nay là ngày của bạn, nhưng mà thật ra ngày nào cũng là của bạn hết! Cứ xinh đẹp, vui vẻ và tận hưởng cuộc sống nhaaa👑",
+        "Mần chi thì mần, rứa chứ cũng phải nhớ hôm nay là ngày đặc biệt của các o nhen! Cứ tự tin mà tỏa sáng, vì đẹp là quyền lợi💅",
+        "Chúc các o lúc mô cũng rực rỡ như nắng sớm, chớ hề gắt gỏng, chỉ toàn tỏa sáng thôi nhennn🌞",
+        "Rứa là 8/3 tới rồi, chúc các tề ngày ni thiệt vui, nhận quà mỏi tay, nhận thương mến đầy tim, còn ai chưa có bồ thì cứ chill, vì mần chi có bồ mới vui, đúng hơm?🥰",
+        "Hôm ni trời đẹp, phải chăng o đã xuống phố?😜",
+      ],
     }),
   ];
   console.log(localStorage.getItem("shamanID"));
@@ -229,11 +256,13 @@ function start() {
   document.getElementById("header").textContent =
     nhomChomSao[chuDeChuc - 1].name;
   document.getElementById("text").textContent =
-    "Xin chào👋 tôi là nhà chiêm tinh " +
+    "Xin chào👋 tui là nhà chiêm tinh " +
     shaman[localStorage.getItem("shamanID")].name +
-    ", nhân dịp 8/3 tôi muốn chúc bạn: " +
-    shaman[localStorage.getItem("shamanID")].quote +
-    " Tôi có thể xem giúp bạn một số thông điệp thông qua chòm sao " +
+    ', nhân dịp 8/3, tui muốn nói rằng: "' +
+    shaman[localStorage.getItem("shamanID")].quote[
+      getRandomInt(0, shaman[localStorage.getItem("shamanID")].quote.length - 1)
+    ] +
+    '". Tui có thể xem giúp bạn một số thông điệp thông qua chòm sao ' +
     nhomChomSao[chuDeChuc - 1].name +
     ".";
   document.querySelectorAll(".consName").forEach((span) => {
